@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    font-family: 'Black Ops One', cursive;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #C62368;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0px 3px 10px -5px #100f0f;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: url(../img/blurry-gradient-haikei.svg);
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* First section */
+
+.first_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 35px;
+
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    outline: 2px solid #C62368;
+    object-fit: cover;
+}
+
+.btn_cv {
+    font-size: 20px;
+    background-color: #C62368;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn_cv:hover {
+    background-color: #ff6e61af;
+    color: #C62368;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: #C62368;
+    border-radius: 10%;
+    color: white;
+}
+
+/* Second section, contact*/
+.second-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin: auto;
+}
+
+h3{
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.contact-p {
+    font-size: 28px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#contact_rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.description {
+    margin: auto;
+    padding: 25px;
+    max-width: 100%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../img/blob-scene-haikei\ \(4\).svg);
+}
+
+
+.contact_icons {
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.contact_icons:hover {
+    background-color: #FF6F61;
+    transform: scale(1.5);
+
+}
+
+/* Footer*/
+
+footer {
+    height: 250px;
+    width: 100%;
+    padding-top: 30px;
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url(../img/layered-waves-haikei\ \(1\).svg);
+}
+
+footer > p {
+    padding: 60px;
+}
+
+
+/* Querys responsive*/
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .first_section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 35px;
+    }
+
+    .photo {
+        margin-left: 50px;
+        object-fit: cover;
+    }
+
+    #presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: justify;
+        padding-top: 150px;
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .active {
+            background-color: #FF6F61;
+            border-radius: 10%;
+            color: white;
+        }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #ffffff;
+    }
+
+    .cerrar-menu {
+        color: #ffffff;
+        background-color: #a10345;
+    }
+
+    .nav {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: #a1034576;
+    }
+
+    .nav.visible {
+        visibility: visible;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+    }
+
+    .menu li a {
+        color: #fff;
+    }
+}
