@@ -15,7 +15,6 @@ menuItems.forEach(function (item) {
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-const body = document.querySelector("#body");
 
 abrir.addEventListener("click", () => {
   nav.classList.add("visible");
@@ -33,3 +32,4 @@ document.addEventListener('mouseup', function (e) {
     abrir.classList.remove("no-visible");
   }
 });
+
