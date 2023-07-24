@@ -270,23 +270,28 @@ footer>p {
         visibility: hidden;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         gap: 1rem;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         padding: 2rem;
-        background-color: #9702409e;
+        margin-top: 90px;
+        background-color: #970240cf;
     }
 
     .nav.visible {
         visibility: visible;
     }
 
+    #abrir.no-visible {
+        visibility: hidden;
+    }
+
     .menu {
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         gap: 2rem;
     }
 

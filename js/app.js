@@ -18,8 +18,11 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
   nav.classList.add("visible");
+  abrir.classList.add("no-visible");
 })
 
 cerrar.addEventListener("click", () => {
   nav.classList.remove("visible");
+  abrir.classList.remove("no-visible");
 })
+
