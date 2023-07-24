@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ul {
@@ -71,15 +72,13 @@ main {
     margin: auto;
 }
 
-
-
 /* First section */
 
 .first_section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px;
+    padding: 20px;
 }
 
 figure {
@@ -97,7 +96,6 @@ figure {
     align-items: center;
     text-align: justify;
     padding: 35px;
-
 }
 
 .photo {
@@ -138,13 +136,12 @@ figure {
     padding: 40px;
 }
 
-
 h2 {
     font-size: 28px;
     margin: auto;
 }
 
-h3{
+h3 {
     font-size: 24px;
     padding-top: 30px;
 }
@@ -201,10 +198,9 @@ footer {
     background-image: url(../img/layered-waves-haikei\ \(1\).svg);
 }
 
-footer > p {
+footer>p {
     padding: 60px;
 }
-
 
 /* Querys responsive*/
 @media screen and (min-width: 1024px) {
@@ -240,12 +236,12 @@ footer > p {
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
     .active {
-            background-color: #FF6F61;
-            border-radius: 10%;
-            color: white;
-        }
+        background-color: #FF6F61;
+        border-radius: 10%;
+        color: white;
+    }
 }
 
 
@@ -267,6 +263,7 @@ footer > p {
     .cerrar-menu {
         color: #ffffff;
         background-color: #a10345;
+        border-radius: 15%;
     }
 
     .nav {
@@ -277,9 +274,10 @@ footer > p {
         gap: 1rem;
         position: absolute;
         top: 0;
+        left: 0;
         right: 0;
         padding: 2rem;
-        background-color: #a1034576;
+        background-color: #9702409e;
     }
 
     .nav.visible {
@@ -293,6 +291,18 @@ footer > p {
     }
 
     .menu li a {
-        color: #fff;
+        color: #ffffff;
     }
+
+    #presentation {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .active {
+        background-color: #FF6F61;
+        border-radius: 10%;
+        color: #ffffff;
+    }
+
 }
